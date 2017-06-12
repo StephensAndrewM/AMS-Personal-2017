@@ -56,9 +56,109 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
 
+section {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: black;
+}
 
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: 3px;
+}
 
+#splash {
+    border-bottom: 5px solid #2679FF;
+}
+
+#splash::before {
+    background: url(../img/splash-placeholder.jpg) center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+#splash h1 {
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    letter-spacing: 2px;
+    font-size:1.2em;
+    line-height:1.3em;
+    font-weight: 300;
+}
+
+#primarynav {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding:10px 0;
+}
+
+#primarynav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#primarynav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 12px 0px;
+}
+
+#about {
+    background: #202020;
+    padding: 50px 0;
+}
+
+#about h1 {
+
+}
+
+#about p {
+    font-size:1em;
+    line-height: 1.3em;
+    color:white;
+    padding: 0 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 1.6em 0;
+}
+
+#about a {
+    color:#2679FF;
+    text-decoration: none;
+}
 
 
 
